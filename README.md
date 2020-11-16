@@ -1,4 +1,4 @@
-# hab-m03. Javascript ES6 - II
+# hab-m04. Javascript ES6 - II
 
 (_ES6 = EcmaScript 6_)
 
