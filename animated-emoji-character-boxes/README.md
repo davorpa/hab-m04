@@ -1,5 +1,12 @@
 # MOD 04 - Animated Emoji Character Boxes
 
+<div align="right">
+<a href="https://davorpa.github.io/hab-m04/animated-emoji-character-boxes" title="Ver en vivo">
+    <img src="../assets/play.png" height="32" alt="Play" style="vertical-align: middle">
+    Live preview
+</a>
+</div>
+
 
 ## Inicializamos proyecto
 
