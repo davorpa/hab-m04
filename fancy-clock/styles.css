@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: white;
+    --main-color-bg: slategray;
+    --clock-items-gap: 2rem;
+    --clock-color: rgba(0, 255, 0, 0.7);
+    --clock-color-bg: rgba(0, 0, 0, 0.7);
+    --clock-color-sdw: red;
+    --clock-caption-color: whitesmoke;
+    --clock-caption-color-bg: rgba(0, 255, 0, 0.5);
+    --clock-caption-color-sdwtxt: black;
+    --clock-caption-color-sdw: red;
+    --clock-separators-color: rgba(245, 245, 245, 0.5);
+    --clock-separator-date-text: "-";
+    --clock-separator-time-text: ":";
+    --clock-separator-time-anim-duration: 0.8s;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--main-color-bg) none 50% 50%;
+    background-size: cover;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--main-color);
+
+    transition: 2s;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+body.bg-01 { background-image: url(background-01.jpg); }
+body.bg-02 { background-image: url(background-02.jpg); }
+body.bg-03 { background-image: url(background-03.jpg); }
+body.bg-04 { background-image: url(background-04.jpg); }
+body.bg-05 { background-image: url(background-05.jpg); }
+body.bg-06 { background-image: url(background-06.jpg); }
+body.bg-07 { background-image: url(background-07.jpg); }
+body.bg-08 { background-image: url(background-08.jpg); }
+body.bg-09 { background-image: url(background-09.jpg); }
+body.bg-10 { background-image: url(background-10.jpg); }
+body.bg-11 { background-image: url(background-11.jpg); }
+body.bg-12 { background-image: url(background-12.jpg); }
+body.bg-13 { background-image: url(background-13.jpg); }
+body.bg-14 { background-image: url(background-14.jpg); }
+body.bg-15 { background-image: url(background-15.jpg); }
+body.bg-16 { background-image: url(background-16.jpg); }
+body.bg-17 { background-image: url(background-17.jpg); }
+body.bg-18 { background-image: url(background-18.jpg); }
+body.bg-19 { background-image: url(background-19.jpg); }
+body.bg-20 { background-image: url(background-20.jpg); }
+body.bg-21 { background-image: url(background-21.jpg); }
+body.bg-22 { background-image: url(background-22.jpg); }
+body.bg-23 { background-image: url(background-23.jpg); }
+body.bg-24 { background-image: url(background-24.jpg); }
+body.bg-25 { background-image: url(background-25.jpg); }
+body.bg-26 { background-image: url(background-26.jpg); }
+body.bg-27 { background-image: url(background-27.jpg); }
+body.bg-28 { background-image: url(background-28.jpg); }
+body.bg-29 { background-image: url(background-29.jpg); }
+body.bg-30 { background-image: url(background-30.jpg); }
+body.bg-31 { background-image: url(background-31.jpg); }
+body.bg-32 { background-image: url(background-32.jpg); }
+body.bg-33 { background-image: url(background-33.jpg); }
+body.bg-34 { background-image: url(background-34.jpg); }
+body.bg-35 { background-image: url(background-35.jpg); }
+body.bg-36 { background-image: url(background-36.jpg); }
+body.bg-37 { background-image: url(background-37.jpg); }
+body.bg-38 { background-image: url(background-38.jpg); }
+body.bg-39 { background-image: url(background-39.jpg); }
+body.bg-40 { background-image: url(background-40.jpg); }
+body.bg-41 { background-image: url(background-41.jpg); }
+body.bg-42 { background-image: url(background-42.jpg); }
+body.bg-43 { background-image: url(background-43.jpg); }
+body.bg-44 { background-image: url(background-44.jpg); }
+body.bg-45 { background-image: url(background-45.jpg); }
+body.bg-46 { background-image: url(background-46.jpg); }
+body.bg-47 { background-image: url(background-47.jpg); }
+body.bg-48 { background-image: url(background-48.jpg); }
+body.bg-49 { background-image: url(background-49.jpg); }
+body.bg-50 { background-image: url(background-50.jpg); }
+body.bg-51 { background-image: url(background-51.jpg); }
+body.bg-52 { background-image: url(background-52.jpg); }
+body.bg-53 { background-image: url(background-53.jpg); }
+body.bg-54 { background-image: url(background-54.jpg); }
+body.bg-55 { background-image: url(background-55.jpg); }
+body.bg-56 { background-image: url(background-56.jpg); }
+body.bg-57 { background-image: url(background-57.jpg); }
+body.bg-58 { background-image: url(background-58.jpg); }
+body.bg-59 { background-image: url(background-59.jpg); }
+body.bg-60 { background-image: url(background-60.jpg); }
+body.bg-61 { background-image: url(background-61.jpg); }
+body.bg-62 { background-image: url(background-62.jpg); }
+body.bg-63 { background-image: url(background-63.jpg); }
+body.bg-64 { background-image: url(background-64.jpg); }
+body.bg-65 { background-image: url(background-65.jpg); }
+body.bg-66 { background-image: url(background-66.jpg); }
+body.bg-67 { background-image: url(background-67.jpg); }
+body.bg-68 { background-image: url(background-68.jpg); }
+body.bg-69 { background-image: url(background-69.jpg); }
+
+.clock {
+    font-size: 5rem;
+    font-family: Orbitron, monospace;
+    font-weight: bold;
+    background: var(--clock-color-bg);
+    color: var(--clock-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    min-width: 75vw;
+    box-shadow: 0 0 10px var(--clock-color-sdw);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    transition: .5s;
+}
+
+.clock .caption {
+    border-radius: 1rem;
+    color: var(--clock-caption-color);
+    background-color: var(--clock-caption-color-bg);
+    text-shadow: 0px 0px 2px var(--clock-caption-color-sdwtxt);
+    box-shadow: 0 0 10px var(--clock-caption-color-sdw);
+
+    padding: 0.8rem;
+    font-size: 50%;
+    position: absolute;
+    transform: rotate(-50deg);
+    top: 1.8rem;
+    left: -7rem;
+}
+
+.clock .date,
+.clock .time {
+    margin: 1rem;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--clock-items-gap);
+}
+
+.clock .time {
+    font-size: 2em;
+    order: -1;
+}
+
+.clock .date .year::after,
+.clock .date .month::after,
+.clock .date .day::after,
+.clock .time .hour::after,
+.clock .time .minute::after,
+.clock .time .second::after {
+    content: var(--clock-separator-time-text);
+    display: inline-block;
+    margin-right: calc(var(--clock-items-gap) / -2);
+    margin-left:  calc(var(--clock-items-gap) / 2);
+    color: var(--clock-separators-color);
+
+}
+.clock .date .year::after,
+.clock .date .month::after,
+.clock .date .day::after {
+    content: var(--clock-separator-date-text);
+}
+
+.clock .time .hour::after,
+.clock .time .minute::after,
+.clock .time .second::after {
+    /* Safari, Chrome and Opera > 12.1 */
+    -webkit-animation: var(--clock-separator-time-anim-duration) blinker linear infinite;
+    /* Firefox < 16 */
+    -moz-animation: var(--clock-separator-time-anim-duration) blinker linear infinite;
+    /* Internet Explorer */
+    -ms-animation: var(--clock-separator-time-anim-duration) blinker linear infinite;
+    /* Opera < 12.1 */
+    -o-animation: var(--clock-separator-time-anim-duration) blinker linear infinite;
+    animation: var(--clock-separator-time-anim-duration) blinker linear infinite;
+}
+
+
+/*
+ * *************************
+ *     LANGUAGE SUPPORT
+ * *************************
+ */
+
+[lang*="es"] .clock .caption {
+    transform: rotate(-50deg);
+    top: 2rem;
+    left: -8rem;
+}
+[lang*="es"] .date .day   { order: 1; }
+[lang*="es"] .date .month { order: 2; }
+[lang*="es"] .date .year  { order: 3; }
+
+[lang*="es"] .date .year::after,
+[lang*="es"] .time .second::after {
+    display: none;
+}
+
+[lang*="en"] .clock .caption {
+    transform: rotate(-50deg);
+    top: 1.8rem;
+    left: -7rem;
+}
+[lang*="en"] .date .day   { order: 3; }
+[lang*="en"] .date .month { order: 2; }
+[lang*="en"] .date .year  { order: 1; }
+
+[lang*="en"] .date .day::after,
+[lang*="en"] .time .second::after {
+    display: none;
+}
+
+
+
+
+/*
+ * *************************
+ *     ANIMATIONS
+ * *************************
+ */
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+/* Firefox < 16 */
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-o-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

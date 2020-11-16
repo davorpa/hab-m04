@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fancy clock</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="date-toisostring.polyfill.js"></script>
+</head>
+<body class="bg-01">
+
+    <time   class="clock"
+            datetime="2099-12-31T23:59:59"
+            role="timer"
+            aria-live="polite"
+            aria-labelledby="clock-caption"
+            aria-controls="clock-date clock-time">
+
+        <span id="clock-caption" class="caption">Horario actual</span>
+        <span id="clock-date" class="date" aria-live="polite" aria-atomic="true">
+            <span class="day" aria-label="Día">31</span>
+            <span class="month" aria-label="Mes">12</span>
+            <span class="year" aria-label="Año">2099</span>
+        </span>
+        <span id="clock-time" class="time" aria-live="polite" aria-atomic="true">
+            <span class="hour" aria-label="Hora">23</span>
+            <span class="minute" aria-label="Minutos">59</span>
+            <span class="second" aria-label="Segundos">59</span>
+        </span>
+
+    </time>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
