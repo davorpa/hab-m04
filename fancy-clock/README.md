@@ -14,7 +14,7 @@ Por la terminal ejecutamos en orden los siguientes comandos:
 
 ```bash
 # Creamos carpeta de proyecto del día y nos metemos en ella
-mkdir fancy-clock cd fancy-clock
+mkdir fancy-clock && cd fancy-clock
 
 # Agregamos contenido
 echo "# MOD 04 - My fancy clock" >> README.md
