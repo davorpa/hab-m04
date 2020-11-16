@@ -26,7 +26,7 @@ git commit -m "🎉 Commit inicial. MOD 04 - My fancy clock"
 # Inicializamos el proyecto NodeJS
 npm init
 
-# Instalamos como dependencia de desarollo la librería
+# Instalamos como dependencia de desarrollo la librería
 # que permite ejecutar en el navegador código en caliente
 npm install -D browser-sync
 
