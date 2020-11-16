@@ -1,6 +1,6 @@
 'use strict';
 
-+(function() {
++(function() {    // IIFE
 
     const i18n = {
         es: {
@@ -21,7 +21,7 @@
             minute: "Minutes",
             second: "Seconds"
         }
-    }
+    };
 
 /*
  * *************************
@@ -71,14 +71,21 @@ function getDateParts(date) {
     };
 }
 
+function getFavoriteLang() {
+    let value;
+    if (typeof window !== 'undefined' && window.navigator) {
+        value = window.navigator.language;
+    }
+    return value;
+}
+
 function getCurrentLang() {
-    let el = document.documentElement;
-    let lang = (el && el.getAttribute("lang")) || "en";
-    return lang;
+    const el = document.documentElement;
+    return (el && el.getAttribute("lang"));
 }
 
 function paintClock(dateParts) {
-    const lang = getCurrentLang();
+    const lang = getCurrentLang() || getFavoriteLang() || 'en';
     const clock = document.querySelector('.clock');
     // seteamos el ISO time del elemento "time"
     clock.setAttribute("datetime", dateParts.date.toISOString());
@@ -91,7 +98,7 @@ function paintClock(dateParts) {
         if (['date'].indexOf(key) !== -1) continue;
         let value = dateParts[key];
         // cuando sea necesario formateamos a texto el mes
-        (key === 'month') && (value = dateParts.date.toLocaleString(lang, { month: 'short' }));
+        (key === 'month') && (value = dateParts.date.toLocaleString(lang, { month: 'long' }));
         // ... y seteamos cada valor en su elemento HTML correspondiente
         const el = clock.querySelector(`.${key}`);
         el && (el.innerText = value);
@@ -143,12 +150,12 @@ const paintBackground = (function(MAX) { // IIFE
 paintClock(getDateParts());
 // paint cada 1 segundo
 const clockIntervalHandler = setInterval(function() {
-    paintClock(getDateParts())
+    paintClock(getDateParts());
 }, 1000);
 
-// paint cada 3 segundos
-const bgIntervalHandler = setInterval(paintBackground, 3000);
+// paint cada 4 segundos
+const bgIntervalHandler = setInterval(paintBackground, 4000);
 
 
 
-}());
+}());    // IIFE
