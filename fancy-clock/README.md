@@ -1,5 +1,12 @@
 # MOD 04 - My fancy clock
 
+<div align="right">
+<a href="https://davorpa.github.io/hab-m04/fancy-clock" title="Ver en vivo">
+    <img src="../assets/play.png" height="32" alt="Play" style="vertical-align: middle">
+    Live preview
+</a>
+</div>
+
 
 ## Inicializamos proyecto
 
