@@ -1,0 +1,23 @@
+{
+  "name": "random-users-dom-fetch",
+  "version": "1.0.0",
+  "description": "Random Users DOM fetch",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server './' --files './'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davorpa/hab-m04.git"
+  },
+  "author": "davorpatech",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/davorpa/hab-m04/issues"
+  },
+  "homepage": "https://github.com/davorpa/hab-m04/random-users-dom-fetch#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
