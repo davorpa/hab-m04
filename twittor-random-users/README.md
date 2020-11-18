@@ -1,7 +1,7 @@
-# MOD 04 - Twittor
+# MOD 04 - Twittor random users
 
 <div align="right">
-<a href="https://davorpa.github.io/hab-m04/twittor" title="Ver en vivo">
+<a href="https://davorpa.github.io/hab-m04/twittor-random-users" title="Ver en vivo">
     <img src="../assets/play.png" height="32" alt="Play" style="vertical-align: middle">
     Live preview
 </a>
@@ -14,14 +14,14 @@ Por la terminal ejecutamos en orden los siguientes comandos:
 
 ```bash
 # Creamos carpeta de proyecto del día y nos metemos en ella
-mkdir twittor && cd twittor
+mkdir twittor-random-users && cd twittor-random-users
 
 # Agregamos contenido
-echo "# MOD 04 - Twittor" >> README.md
+echo "# MOD 04 - Twittor random users" >> README.md
 
 ## Agregamos al repositorio
 git add --all
-git commit -m "🎉 Commit inicial. MOD 04 - Twittor"
+git commit -m "🎉 Commit inicial. MOD 04 - Twittor random users"
 
 # Inicializamos el proyecto NodeJS
 npm init
@@ -35,7 +35,7 @@ echo "node_modules" >> .gitignore
 
 ## Agregamos al repositorio
 git add --all
-git commit -m "📝 Init proyecto. MOD 04 - Twittor"
+git commit -m "📝 Init proyecto. MOD 04 - Twittor random users"
 
 # Arrancamos Visual Studio Code en esa carpeta
 code .
@@ -66,11 +66,11 @@ Snippet mínimo para el `index.html`:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twittor</title>
+    <title>Twittor random users</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Twittor</h1>
+    <h1>Twittor random users</h1>
     <script type="module" src="main.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
-  "name": "twittor",
+  "name": "twittor-random-users",
   "version": "1.0.0",
-  "description": "Twittor",
+  "description": "Twittor random users",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/davorpa/hab-m04/issues"
   },
-  "homepage": "https://github.com/davorpa/hab-m04/twittor#readme",
+  "homepage": "https://github.com/davorpa/hab-m04/twittor-random-users#readme",
   "devDependencies": {
     "browser-sync": "^2.26.13"
   }
