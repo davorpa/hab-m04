@@ -1,0 +1,23 @@
+{
+  "name": "taskthor",
+  "version": "1.0.0",
+  "description": "Taskthor, a tasklist manager",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server './' --files './'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davorpa/hab-m04.git"
+  },
+  "author": "davorpatech",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/davorpa/hab-m04/issues"
+  },
+  "homepage": "https://github.com/davorpa/hab-m04/taskthor#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
