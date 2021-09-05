@@ -41,13 +41,14 @@ updates:
       timezone: "Europe/Madrid"
     # Specify labels for npm pull requests
     labels:
+      - "javascript"
       - "npm-modules"
       - "dependencies"
     commit-message:
       # Prefix all commit messages with `npm`
       # include a list of updated dependencies
-      prefix: "npm prod"
-      prefix-development: "npm dev"
+      prefix: "npm"
+      prefix-development: "npm"
       include: "scope"
     # Allow up to N open pull requests (0 to disable)
     open-pull-requests-limit: 10
