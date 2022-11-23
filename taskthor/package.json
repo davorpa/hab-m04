@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/davorpa/hab-m04/taskthor#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.13"
+    "browser-sync": "^2.27.10"
   }
 }
